@@ -1,0 +1,44 @@
+
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+export PATH
+
+
+
+LC_NUMERIC='en_US.UTF-8'
+
+export EDITOR="/usr/bin/nano"
+
+# Aliases that do things
+alias ip='ipconfig getifaddr en0'
+alias ipext='curl -s http://checkip.dyndns.org/ | grep -o '[0-9][0-9]*.[0-9][0-9]*.[0-9][0-9]*.[0-9]*''
+alias ll='ls -AlhG'
+alias h='history'
+alias raspberrypi='ssh pi@raspberrypi'
+alias blueberrypi='ssh pi@blueberrypi'
+alias zerow='ssh pi@zerow'
+alias home='cd ~'
+alias rm='rm -i'
+alias apg='sudo apt-get -y install'
+
+# Functions
+function up()
+{
+    for i in `seq 1 $1`;
+    do
+    	cd ../
+    done;
+}
+
+function giveme ()
+{
+sudo apt-get install "$@"
+}
+
+
+# Exports
+export HISTFILESIZE=20000
+export HISTSIZE=10000
+export HISTCONTROL=ignoredups
+export HISTCONTROL=ignoreboth
