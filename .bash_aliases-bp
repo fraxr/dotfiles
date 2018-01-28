@@ -1,0 +1,18 @@
+#Aliases that do things
+#alias ip='ipconfig getifaddr en0'
+#alias ip=ip()
+alias ipext='curl -s http://checkip.dyndns.org/ | grep -o '[0-9][0-9]*.[0-9][0-$ 
+alias ll='ls -AlhG' 
+alias h='history' 
+alias raspberrypi='ssh pi@raspberrypi' 
+alias blueberrypi='ssh pi@blueberrypi' 
+alias zerow='ssh pi@zerow' 
+alias home='cd ~' 
+alias ..='cd ..' 
+alias ...='cd ../../../'
+alias apt-get='sudo apt-get'
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias update='sudo apt-get update && sudo apt-get upgrade'
+alias o="open ."
